@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">Tempo Sensor</string>
 
-    <string name="hello_world">Hello, Nick</string>
     <string name="action_settings">Settings</string>
-    <string name="this_kinda_sucks">This kinda sucks.</string>
-    <string name="sucks">This really really really sucks.</string>
-    <string name="button_sucks">Press to Suck</string>
+    <string name="login_button">Login</string>
+    <string name="title_activity_another">AnotherActivity</string>
 </resources>

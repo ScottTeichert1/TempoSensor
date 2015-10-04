@@ -17,8 +17,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AnotherActivity"
+            android:name=".HomePageActivity"
             android:label="@string/title_activity_another" >
+        </activity>
+        <activity
+            android:name=".TestUpdatedActivites"
+            android:label="@string/title_activity_test_updated_activites"
+            android:theme="@style/AppTheme" >
         </activity>
     </application>
 

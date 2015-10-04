@@ -14,6 +14,9 @@ public class LoginActivity extends AppCompatActivity {
     private EditText mPasswordField;
     private Button mLoginButton;
 
+    private String mUsername = "LOGIN";
+    private String mPassword = "password";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +30,10 @@ public class LoginActivity extends AppCompatActivity {
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mUserName.getText().toString().equals("Login") && mPasswordField.getText().toString().equals("password")) {
+                if (mUserName.getText().toString().equals(mUsername) && mPasswordField.getText().toString().equals(mPassword)) {
                     startHomepage();
                 } else {
-                    stayOnPage();
-                    Toast.makeText(LoginActivity.this, "Sorry, that password is incorrect", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, "Sorry, that username password combination is incorrect.", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -40,9 +42,5 @@ public class LoginActivity extends AppCompatActivity {
     public void startHomepage() {
         Intent myIntent = new Intent(this, HomePageActivity.class);
         startActivity(myIntent);
-    }
-    public void stayOnPage() {
-        Intent myCurrentIntent = new Intent(this, LoginActivity.class);
-        startActivity(myCurrentIntent);
     }
 }

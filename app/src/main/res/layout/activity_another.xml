@@ -4,6 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+<<<<<<< HEAD
     tools:context="com.example.colin_000.temposensor.AnotherActivity"
     android:orientation="vertical">
 
@@ -15,10 +16,15 @@
         android:background="#00f5ff"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp" />
+=======
+    tools:context="com.example.colin_000.temposensor.HomePageActivity"
+    android:background="@android:color/holo_blue_light">
+>>>>>>> 2330d54e0efb318e59e8783b156a83967b07ed2d
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Green"
         android:id="@+id/button2"
         android:background="#01ff05"
@@ -37,3 +43,11 @@
         android:layout_marginBottom="10dp" />
 
 </LinearLayout>
+=======
+        android:text="@string/start_listening"
+        android:id="@+id/startListeningButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white" />
+</RelativeLayout>
+>>>>>>> 2330d54e0efb318e59e8783b156a83967b07ed2d

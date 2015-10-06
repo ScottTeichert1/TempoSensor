@@ -10,4 +10,12 @@
     tools:showIn="@layout/activity_test_updated_activites"
     tools:context="com.example.colin_000.temposensor.TestUpdatedActivites">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="188dp" />
 </RelativeLayout>

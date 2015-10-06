@@ -1,6 +1,5 @@
 package com.example.colin_000.temposensor;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -31,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (mUserName.getText().toString().equals(mUsername) && mPasswordField.getText().toString().equals(mPassword)) {
-                    startHomepage();
+                    
                 } else {
                     Toast.makeText(LoginActivity.this, "Sorry, that username password combination is incorrect.", Toast.LENGTH_LONG).show();
                 }
@@ -39,8 +38,4 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void startHomepage() {
-        Intent myIntent = new Intent(this, HomePageActivity.class);
-        startActivity(myIntent);
-    }
 }
